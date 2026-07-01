@@ -17,7 +17,7 @@ const OurWorkScreen = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const backendURL = process.env.NEXT_PUBLIC_API_URL || "https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net";
+        const backendURL = process.env.NEXT_PUBLIC_API_URL || "https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net";
         const { data } = await axios.get(`${backendURL}/api/upload/our-work/images`);
         setImages(data);
       } catch (error) {
@@ -42,7 +42,7 @@ const OurWorkScreen = () => {
 
     try {
       const { data } = await axios.post(
-        'https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net/api/upload/our-work',
+        'https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net/api/upload/our-work',
         formData,
         {
           headers: { 'Content-Type': 'multipart/form-data' },

@@ -6,7 +6,7 @@ import Layout from '../../components/Layout';
 import ProductScreen from '../../screens/ProductScreen';
 
 const API_BASE =
-  'https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net';
+  'https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net';
 
 export default function ProductPage() {
   const router = useRouter();

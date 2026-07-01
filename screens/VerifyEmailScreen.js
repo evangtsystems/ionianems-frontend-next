@@ -12,7 +12,7 @@ const VerifyEmailScreen = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  const backendURL = process.env.NEXT_PUBLIC_API_URL || "https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net";
+  const backendURL = process.env.NEXT_PUBLIC_API_URL || "https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net";
 
   useEffect(() => {
     const verifyEmail = async () => {

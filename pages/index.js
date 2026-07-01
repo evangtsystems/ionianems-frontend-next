@@ -30,7 +30,7 @@ export default function Home({ preloadedProducts }) {
 
 export async function getStaticProps() {
   try {
-    const res = await axios.get('https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net/api/products?keyword=&pageNumber=1');
+    const res = await axios.get('https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net/api/products?keyword=&pageNumber=1');
     return {
       props: { preloadedProducts: res.data.products || [] },
     };
