@@ -1,0 +1,145 @@
+{
+    "products": "Products",
+    "pumps": "Boat Pumps",
+    "underwater_lighting": "Underwater Lighting",
+    "control_instruments": "Control Instruments",
+    "boat_wipers": "Boat Wipers",
+    "navigation_systems": "Navigation Systems",
+    "alternator_regulator": "Alternator Regulator",
+    "control_and_automation": "Control and Automation Instruments",
+    "collision_prevention": "Intelligent Collision Prevention System",
+    "control_systems": "Control Systems",
+    "marine_electrical": "Marine Electrical Materials",
+    "electrical_equipment": "Electrical Equipment",
+    "battery_chargers": "Battery Chargers",
+    "automation_systems": "Automation Systems",
+    "marine_generator": "Marine Generator",
+  
+    "who_we_are": "Who We Are",
+    "cart": "Cart",
+    "Our Work": "Our Work",
+    "profile": "Profile",
+    "logout": "Logout",
+    "sign_in": "Sign In",
+    "admin_panel": "Admin Panel",
+    "orders": "Orders",
+    "users": "Users",
+    "user_profile": "User Profile",
+    "name": "Name",
+    "enter_name": "Enter Name",
+    "email": "Email Address",
+    "enter_email": "Enter Email",
+    "password": "Password",
+    "enter_password": "Enter Password",
+    "confirm_password": "Confirm Password",
+    "confirm_password_placeholder": "Confirm your password",
+    "update": "Update",
+    "delete_account": "Delete User Account",
+    "delete_cookies": "Delete Cookies & Data",
+    "cookies_deleted": "All cookies and site data have been deleted!",
+    "cookies_deleted_message": "Cookies have been successfully deleted!",
+    "password_mismatch": "Passwords do not match",
+    "profile_updated": "Profile updated successfully",
+    "confirm_delete_account": "Are you sure you want to delete your account? This action cannot be undone.",
+    "account_deleted": "Your data has been deleted!",
+    "my_orders": "My Orders",
+    "id": "ID",
+    "date": "Date",
+    "total": "Total",
+    "paid": "Paid",
+    "delivered": "Delivered",
+    "details": "Details",
+  
+    "About Us": "About Us",
+    "about_us_description": "For over 15 years, EMS Electrical Marine Services has been offering specialized solutions in the field of marine electrical services for both leisure and commercial vessels. Based in Corfu, we specialize in electrical installations, system refurbishments, and certifications according to Greek and international regulations.\n\nOur experienced team offers:\n\n• New electrical installations tailored to each vessel\n• Complete electrical system refurbishments for any type of vessel\n• On-site or in-shop electrical equipment repairs\n• A wide variety of ready-to-use spare parts from leading domestic and international suppliers\n\nWe provide immediate support across Greece and also serve Albania by arrangement. Our mobile team can reach your vessel within 2 hours anywhere in the Ionian.\n\nAt EMS, we continuously monitor developments and new products in the field, ensuring that we offer modern, functional, and high-quality solutions. Our mission is to combine technical excellence, reliability, and personalized support—keeping your vessel safe, functional, and ready for the next trip.",
+    
+    "back_to_home": "Back to Home",
+
+
+    "shopping_cart": "Shopping Cart",
+  "cart_empty": "Your cart is empty.",
+  "go_back": "Go Back",
+  "subtotal": "Subtotal",
+  "items": "items",
+  "proceed_to_checkout": "Proceed To Checkout",
+
+  "no_products_found": "No products found for this category.",
+
+
+  "email_verification_required": "Email Verification Required",
+  "check_your_email": "Please check your email",
+  "click_verification_link": "and click the verification link before logging in.",
+  "go_to_login": "Go to Login",
+
+
+  "filter_by_category": "Filter by Category",
+  "all": "All",
+  "slogan_line": "Powering Yachts Across the Ionian – Fast, Expert, Unmatched",
+  "slogan_paragraph": "Electrical Marine Services (EMS), based in Corfu, has been a trusted force in marine electrics for over 15 years. We deliver high-performance electrical installations, precision upgrades, and on-demand emergency support for yachts and pleasure boats across Greece and Albania.\n\nWhether you're docked in port or adrift at sea, EMS brings expert service to your vessel — anywhere in the Ionian, within 2 hours. Count on us to keep your journey safe, smooth, and powered with absolute confidence.",
+  
+  "our_partners": "Our Trusted Partners",
+  "latest_products": "Latest Products",
+  "corfu_location": "Electrical Marine Services – Corfu Location",
+  "contact_info": "Contact Info",
+  "address": "Address",
+  "phone": "Phone",
+  
+  "hours": "Hours",
+
+
+  
+  "email_verified_success": "Your email has been verified! You can now log in.",
+  "verify_email_first": "Please verify your email before logging in.",
+  "new_customer": "New Customer?",
+  "register": "Register",
+
+
+  "order": "Order",
+  "shipping": "Shipping",
+  "delivered_on": "Delivered on",
+  "not_delivered": "Not Delivered",
+  "payment_method": "Payment Method",
+  "method": "Method",
+  "paid_on": "Paid on",
+  "not_paid": "Not Paid",
+  "order_items": "Order Items",
+  "order_empty": "Order is empty",
+  "order_summary": "Order Summary",
+  "tax": "Tax",
+  "mark_delivered": "Mark As Delivered",
+  "order_paid": "Order is paid",
+
+  "our_work": "Our Work",
+  "our_work_description": "Here are some examples of our marine electrical engineering work.",
+  "upload_photos": "Upload Photos",
+
+  
+    "authorized_reseller": "Authorized Reseller",
+    "authorized_reseller_info": "Our company is an authorized reseller of three top manufacturers.\nThe names of the companies will be announced soon.",
+
+    "Contact": "Contact",
+
+    "boat_support": "Boat Support",
+    "boat_support_intro": "Whether you're docked at Gouvia Marina or anchored deep in the Ionian, IonianEMS delivers fast, expert support. We specialize in electrical systems, diagnostics, and smart upgrades for yachts and boats. One call, and help is on the way.",
+    "contact_us_now": "Request Assistance",
+    "experiencing_issues": "🆘 Experiencing issues onboard? Our mobile team responds within minutes.",
+    "what_we_can_help_with": "What We Can Help You With",
+    "what_we_can_help_with_description": "For over 15 years, we've powered marine adventures across the Ionian. From full system installs to quick diagnostics — if it runs on current, we know it.",
+    "full_electrical_installations": "Full Electrical Installations",
+    "battery_charging_systems": "Battery & Charging Systems",
+    "diagnostics_repairs": "Troubleshooting & Diagnostics",
+    "emergency_dockside_support": "Emergency Dockside Support",
+    "navigation_automation": "Navigation & Automation",
+    "why_trust_ems": "Why More Boat Owners Trust IonianEMS",
+    "why_trust_ems_description": "We don’t just fix problems — we prevent them. Our team combines technical excellence with rapid mobile response. Stocked spare parts, multilingual support, and deep knowledge of vessel systems mean you get solutions, not guesswork.",
+    "need_equipment_too": "Need Equipment Too?",
+    "shop_description": "Shop our curated lineup of reliable, certified marine electrical systems — tested and trusted on the Ionian.",
+    "browse_products": "🛒 Browse Products"
+
+
+  }
+  
+  
+  
+  
+  

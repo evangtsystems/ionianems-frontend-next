@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.ionianems.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ionianems.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ionianems.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ionianems.com/boat-support/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ionianems.com/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Product Categories -->
+  <url><loc>https://www.ionianems.com/products/pumps/</loc></url>
+  <url><loc>https://www.ionianems.com/products/underwater_lighting/</loc></url>
+  <url><loc>https://www.ionianems.com/products/control_instruments/</loc></url>
+  <url><loc>https://www.ionianems.com/products/boat_wipers/</loc></url>
+  <url><loc>https://www.ionianems.com/products/navigation_systems/</loc></url>
+  <url><loc>https://www.ionianems.com/products/alternator_regulator/</loc></url>
+  <url><loc>https://www.ionianems.com/products/control_and_automation/</loc></url>
+  <url><loc>https://www.ionianems.com/products/collision_prevention/</loc></url>
+  <url><loc>https://www.ionianems.com/products/control_systems/</loc></url>
+  <url><loc>https://www.ionianems.com/products/marine_electrical/</loc></url>
+  <url><loc>https://www.ionianems.com/products/electrical_equipment/</loc></url>
+  <url><loc>https://www.ionianems.com/products/battery_chargers/</loc></url>
+  <url><loc>https://www.ionianems.com/products/automation_systems/</loc></url>
+  <url><loc>https://www.ionianems.com/products/marine_generator/</loc></url>
+
+</urlset>

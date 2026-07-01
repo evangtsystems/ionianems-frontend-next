@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  
+  main {
+      min-height: 80vh;
+    }
+    
+    .rating span {
+      margin: 0.1rem;
+    }
+    
+    .rating svg {
+      color: #f8e825;
+    }
+    
+    .rating-text {
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding-left: 0.5rem;
+    }
+    
+    .product-title {
+      height: 2.5em; /* Set a fixed height */
+      overflow: hidden; /* Hide overflow content */
+      text-overflow: ellipsis; /* Add ellipsis for long text */
+      white-space: nowrap; /* Prevent wrapping */
+    }
+    
+    table td,
+    table th {
+      text-align: center;
+    }
+    
+    .review {
+      margin-top: 30px;
+    }
+    
+    .review h2 {
+      font-size: 24px;
+      background: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    .review button {
+      margin-top: 10px;
+    }
+    
+    .carousel-caption {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+    .header {
+       background-color: #ffffff !important; /* Light blue */
+    }
+  
+    .common-button {
+      width: 290px; /* Set a fixed width to ensure all buttons are the same */
+      height: auto; /* Adjusts height based on content */
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      color: white;
+      background-color: #38999c;
+      border: 2px solid #463c5d;
+      white-space: nowrap; /* Prevents text wrapping */
+      overflow: hidden; /* Ensures no extra spacing */
+    }
+    
+    .product-image {
+      width: 100%; /* ✅ Ensures it fills the container */
+      height: 250px !important; /* ✅ Forces height to 250px */
+      min-height: 250px !important; /* ✅ Prevents shrinking */
+      max-height: 250px !important; /* ✅ Prevents growing */
+      object-fit: cover; /* ✅ Ensures no distortion */
+      display: block; /* ✅ Prevents inline behavior issues */
+      border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  .card-img,
+  .card-img-top,
+  .card-img-bottom {
+      width: 100% !important;
+      height: 211px !important; /* ✅ Forces a fixed height */
+      object-fit: cover !important; /* ✅ Crops excess areas while maintaining aspect ratio */
+  }
+  
+  .custom-search-btn {
+    background-color: #ffdd57 !important; /* Example: Yellow */
+    color: #000 !important; /* Text color */
+    border: 1px solid #ffdd57 !important;
+  }
+  .custom-search-btn:hover {
+    background-color: #e6c34a !important; /* Darker shade on hover */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ✅ Locks Header Image Dimensions & Behavior */
+.header-image {
+  height: 140px !important;
+  min-width: 500px ;
+  width: 100% !important;
+  display: block !important;
+  background-size: cover !important;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  backface-visibility: hidden;
+  will-change: transform;
+  line-height: 0 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+/* ✅ Default Navbar Layout */
+.custom-navbar {
+  background-color: #283C79;
+  width: 100%;
+  height: 140px;
+  padding: 0 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Navbar Shrink Handling (1200px - 1656px) */
+@media (max-width: 1656px) and (min-width: 1400px) {
+  .custom-navbar {
+    height: 140px !important;
+    background-color: #283C79 !important;
+  }
+
+  .navbar-container {
+    max-width: 70% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar-container {
+    max-width: 100% !important;
+    padding: 0 20px;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    font-size: 14px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+/* ✅ Extra Navbar Flexibility for Medium Screens */
+@media (max-width: 1220px) {
+  .custom-navbar {
+    width: 100% !important;
+  }
+}
+
+/* ✅ Responsive Behavior for Smaller Screens (Mobile-first style) */
+@media (max-width: 1200px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .custom-navbar {
+    height: auto;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header-image {
+    width: 100% !important;
+    min-width: unset !important;
+    height: 140px !important;
+    aspect-ratio: 3 / 1; /* Adjust depending on your image shape */
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+/* ✅ Navbar Fix for Medium-Down Screens (992px - 1200px) */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .navbar-nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px !important;
+    padding: 8px 10px !important;
+    flex: 1 1 auto !important;
+  }
+
+  .custom-navbar,
+  .navbar-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+}
+
+/* ✅ Below 992px: Mobile-Like Spacing */
+@media (max-width: 992px) {
+  .custom-navbar {
+    margin-top: 0px !important;
+   
+
+  }
+
+  .header-image {
+    margin-bottom: 0px !important;
+  }
+}
+
+.navbar-toggler {
+  margin-top: 10px; /* optional tweak */
+}
+
+/* ✅ Expand Navbar Above 1312px (Helper) */
+@media (min-width: 1312px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .header-image {
+    width: 100% !important;
+    height: 105px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    min-width: unset !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .custom-navbar {
+ margin-top: 0 !important; /* or 2px/4px if you want more space */
+ 
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 1656px) and (min-width: 1400px) {
+  .custom-navbar {
+    padding: 0 16px !important; /* 🧹 Reduce side padding to free up space */
+  }
+
+  .navbar-nav {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: 8px !important; /* 🧩 Reduce spacing to fit more items */
+    overflow-x: auto !important; /* ✅ Enable horizontal scroll if needed */
+    scrollbar-width: none; /* 🔒 Hide scrollbar for Firefox */
+  }
+
+  .navbar-nav::-webkit-scrollbar {
+    display: none; /* 🔒 Hide scrollbar for Chrome/Safari */
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    white-space: nowrap !important;
+    font-size: 13px !important;
+    padding: 4px 8px !important;
+  }
+}
+
+
+.navbar-toggler {
+  position: relative;
+  z-index: 10;
+  border-radius: 6px !important;   /* You can tweak the radius */
+  border-width: 2px;
+  border-color: white !important;
+  padding: 6px 10px;
+  background-color: transparent;   /* optional for contrast */
+  transition: all 0.2s ease-in-out;
+  top: -2px !important;
+ 
+}
+
+.navbar-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+.hero-banner-wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center by default for mobile */
+  background-color: #fff;
+}
+
+.hero-banner {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* On desktop: align image to the left */
+@media (min-width: 992px) {
+  .hero-banner-wrapper {
+    justify-content: flex-start;
+    padding-left: 5vw; /* Optional: Add space from the edge */
+  }
+}
+
+@media (min-width: 1656px) {
+  .custom-navbar {
+    width: 100vw !important;
+    max-width: none !important;
+    padding: 0 48px !important;
+  }
+
+  .navbar-container {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 48px !important;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-toggle {
+    font-size: 16px !important;
+    white-space: nowrap;
+  }
+}

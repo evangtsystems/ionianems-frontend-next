@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login
+Disallow: /login/
+Disallow: /register
+Disallow: /register/
+Disallow: /verify-email
+Disallow: /verify-email/
+Disallow: /profile
+Disallow: /profile/
+Disallow: /placeorder
+Disallow: /placeorder/
+Disallow: /check-email
+Disallow: /check-email/
+Disallow: /payment
+Disallow: /payment/
+Disallow: /shipping
+Disallow: /shipping/
+
+Sitemap: https://www.ionianems.com/sitemap.xml
