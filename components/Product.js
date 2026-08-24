@@ -9,7 +9,7 @@ const Product = ({ product }) => {
   // ✅ Always construct a full absolute URL for non-cloudinary images
   const imageUrl = product.image?.startsWith('http')
     ? product.image
-    : `https://ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net${product.image}`;
+    : `https://ionianems.com${product.image}`;
 
   return (
     <Card className="my-3 p-3 rounded">
@@ -61,3 +61,4 @@ const Product = ({ product }) => {
 };
 
 export default Product;
+

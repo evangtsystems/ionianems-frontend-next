@@ -11,7 +11,7 @@ export default function VerifyEmailScreen() {
   const [status, setStatus] = useState('loading');
   const [message, setMessage] = useState('');
 
-  const backendURL = process.env.NEXT_PUBLIC_API_URL || "ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net";
+  const backendURL = process.env.NEXT_PUBLIC_API_URL || "https://ionianems.com";
 
   useEffect(() => {
     if (!token) return;

@@ -55,7 +55,7 @@ const CartScreen = () => {
                       src={
                         item.image.includes('cloudinary')
                           ? item.image
-                          : `https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net${item.image}`
+                          :`https://ionianems.com${item.image}`
                       }
                       alt={item.name}
                       fluid

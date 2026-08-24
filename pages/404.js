@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import ProductScreen from '../screens/ProductScreen';
 
 const API_BASE =
-  'https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net';
+  'https://ionianems.com';
 
 export default function Custom404() {
   const router = useRouter();
@@ -63,3 +63,4 @@ export default function Custom404() {
     </Layout>
   );
 }
+

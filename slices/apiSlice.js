@@ -4,7 +4,7 @@ import { logout } from './authSlice';
 
 const baseUrl =
   process.env.NEXT_PUBLIC_API_URL ||
-  "ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net";
+  "https://ionianems.com";
 
 const baseQuery = fetchBaseQuery({
   baseUrl,

@@ -34,7 +34,7 @@ const ProductScreen = ({ product }) => {
     product.image?.startsWith('http')
       ? product.image
       : product.image
-        ? `https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net${product.image}`
+        ? `https://ionianems.com${product.image}`
         : '/images/placeholder.svg'
   }
   alt={product.name || 'No image available'}

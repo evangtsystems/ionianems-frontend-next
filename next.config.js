@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ionianems-backend-hkgghubjeqgyctdc.italynorth-01.azurewebsites.net',
+        hostname: 'ionianems.com',
         pathname: '/uploads/**',
       },
       {
@@ -19,3 +19,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+

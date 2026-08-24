@@ -29,7 +29,7 @@ function App({ Component, pageProps }) {
     // 🔹 Keep backend alive
     const interval = setInterval(async () => {
       try {
-        await axios.get('ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net');
+        await axios.get('https://ionianems.com');
       } catch (err) {
         console.error('Backend keep-alive failed:', err);
       }
@@ -96,3 +96,4 @@ function App({ Component, pageProps }) {
 }
 
 export default App;
+
