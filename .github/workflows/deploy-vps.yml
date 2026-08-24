@@ -21,7 +21,7 @@ jobs:
 
       - name: Build
         env:
-          NEXT_PUBLIC_API_URL: https://ionianems1-backend-erdrase6hwexhndz.italynorth-01.azurewebsites.net
+          NEXT_PUBLIC_API_URL: https://ionianems.com
         run: npm run build
 
       - name: Deploy out folder to VPS
