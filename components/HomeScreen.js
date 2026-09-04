@@ -216,19 +216,20 @@ const HomeScreen = ({ preloadedProducts = [] }) => {
               }}
             >
               <iframe
-                title="EMS Corfu Location"
-                src="https://www.google.com/maps?q=39.645001742961725,19.851914724030458&z=18&output=embed"
-                width="100%"
-                height="100%"
-                style={{
-                  border: 0,
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                }}
-                allowFullScreen
-                loading="lazy"
-              />
+  title="IonianEMS Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.256161305995!2d19.849247976478846!3d39.6450291022452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b5b7a919d53a3%3A0x532533d12e803c25!2sIonianEMS!5e1!3m2!1sen!2sgr!4v1788529511436!5m2!1sen!2sgr"
+  width="100%"
+  height="100%"
+  style={{
+    border: 0,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="strict-origin-when-cross-origin"
+/>
             </div>
           </Col>
           <Col md={6}>
