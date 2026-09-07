@@ -154,23 +154,27 @@ const ContactPage = () => {
               <strong>🕘 Hours:</strong> Mon–Sat: 9:00–18:00
             </div>
 
-            <div
-              style={{
-                borderRadius: '12px',
-                overflow: 'hidden',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.1)',
-              }}
-            >
-              <iframe
-                title="IonianEMS Map"
-                src="https://www.google.com/maps?q=39.645001742961725,19.851914724030458&z=18&output=embed"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
+           <div
+  style={{
+    borderRadius: '12px',
+    overflow: 'hidden',
+    boxShadow: '0 2px 12px rgba(0,0,0,0.1)',
+  }}
+>
+  <iframe
+    title="IonianEMS Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.256161305995!2d19.849247976478846!3d39.6450291022452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b5b7a919d53a3%3A0x532533d12e803c25!2sIonianEMS!5e1!3m2!1sen!2sgr!4v1788529511436!5m2!1sen!2sgr"
+    width="100%"
+    height="420"
+    style={{
+      border: 0,
+      display: 'block',
+    }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+  />
+</div>
           </Col>
         </Row>
       </Container>
