@@ -1,11 +1,40 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
+const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
 const ContactPage = () => {
+  const widgetContainerRef = useRef(null);
+  const widgetIdRef = useRef(null);
+  const [turnstileReady, setTurnstileReady] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState('');
+  const [isSending, setIsSending] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState(null);
+
+  useEffect(() => {
+    if (!turnstileReady || !turnstileSiteKey || !widgetContainerRef.current || !window.turnstile) return;
+
+    widgetIdRef.current = window.turnstile.render(widgetContainerRef.current, {
+      sitekey: turnstileSiteKey,
+      callback: (token) => setTurnstileToken(token),
+      'expired-callback': () => setTurnstileToken(''),
+      'error-callback': () => {
+        setTurnstileToken('');
+        setStatus('verification');
+      },
+    });
+
+    return () => {
+      if (widgetIdRef.current !== null && window.turnstile) {
+        window.turnstile.remove(widgetIdRef.current);
+        widgetIdRef.current = null;
+      }
+    };
+  }, [turnstileReady]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,11 +42,14 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!turnstileToken || isSending) return;
+    setIsSending(true);
+    setStatus(null);
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, turnstileToken }),
       });
       if (res.ok) {
         setStatus('success');
@@ -27,11 +59,18 @@ const ContactPage = () => {
       }
     } catch (err) {
       setStatus('error');
+    } finally {
+      setIsSending(false);
+      setTurnstileToken('');
+      if (widgetIdRef.current !== null && window.turnstile) {
+        window.turnstile.reset(widgetIdRef.current);
+      }
     }
   };
 
   return (
     <Layout>
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" strategy="afterInteractive" onReady={() => setTurnstileReady(true)} />
       <Head>
         <title>Contact IonianEMS | Marine Electrical Services in Corfu</title>
         <meta
@@ -92,7 +131,8 @@ const ContactPage = () => {
             <h3 className="mb-4">Send Us a Message</h3>
 
             {status === 'success' && <Alert variant="success">✅ Message sent successfully!</Alert>}
-            {status === 'error' && <Alert variant="danger">❌ Something went wrong. Try again.</Alert>}
+            {status === 'error' && <Alert variant="danger">❌ Something went wrong. Please try again.</Alert>}
+            {status === 'verification' && <Alert variant="danger">Verification failed. Please retry the challenge.</Alert>}
 
             <Form onSubmit={handleSubmit} className="shadow p-4 rounded" style={{ backgroundColor: '#f7f7f7' }}>
               <Form.Group controlId="name" className="mb-3">
@@ -132,8 +172,10 @@ const ContactPage = () => {
                 />
               </Form.Group>
 
-              <Button type="submit" variant="primary" className="w-100">
-                Send Message
+              <div ref={widgetContainerRef} className="mb-3" />
+              {!turnstileSiteKey && <Alert variant="danger">Contact form is temporarily unavailable. Please email us directly.</Alert>}
+              <Button type="submit" variant="primary" className="w-100" disabled={!turnstileToken || isSending || !turnstileSiteKey}>
+                {isSending ? 'Sending...' : 'Send Message'}
               </Button>
             </Form>
           </Col>
